@@ -31,6 +31,11 @@ theme: minima
 plugins:
   - jekyll-feed
 
+markdown: kramdown
+kramdown:
+   math_engine: mathjax
+
+
 # Collections
 #collections:
 #  - solutions_randomized
