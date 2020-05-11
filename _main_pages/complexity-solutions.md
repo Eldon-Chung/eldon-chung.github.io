@@ -1,16 +1,17 @@
 ---
-title: Posts
-layout: default
+layout: listing
+title: Complexity Solutions
+display_on_nav: false
+collection: solutions_complexity
+
+title_redirect_link: "/solutions"
+title_redirect_name: "Back to Solutions"
 ---
 
-{% if site.paginate %}
-    {% assign posts = paginator.posts %}
-  {% else %}
-    {% assign posts = site.posts %}
-  {% endif %}
+{% assign posts = site.solutions_complexity %}
 
 
-  {%- if posts.size > 0 -%}
+{%- if posts.size > 0 -%}
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
@@ -24,9 +25,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
           {{ post.excerpt }}
-        {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
@@ -48,5 +47,7 @@ layout: default
         </ul>
       </div>
     {%- endif %}
-
+{%- endif -%}
+{%- if posts.size == 0 -%}
+Will post attempts when I get around to it!
 {%- endif -%}

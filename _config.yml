@@ -31,6 +31,28 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Collections
+#collections:
+#  - solutions_randomized
+
+collections:
+  main_pages:
+    output: true
+    permalink: /:collection/:name
+  solutions_randomized:
+    output: true
+    permalink: /:collection/:name
+  solutions_complexity:
+    output: true
+    permalink: /:collection/:name
+  solutions_clrs:
+    output: true
+    permalink: /:collection/:name
+  notes:
+    output: true
+    permalink: /:collection/:name
+
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
