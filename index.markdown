@@ -19,3 +19,5 @@ I was lucky to do my UROP and dissertation with [Prof. Divesh Aggarwal](https://
 
 ## Hobbies
 Besides teaching in my free time, I also love playing the guitar, and reading books. I might also code in my free time. Incidentally, I'm learning [Rust](https://www.rust-lang.org/), it's been interesting so far.
+
+I used to also shoot arrows. I had won 4 silver and 1 bronze medals during the 2016 NUS Indoors Archery Championship. I've since ended the hobby. Hoping to pick it back up when I have the time.
