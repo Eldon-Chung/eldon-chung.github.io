@@ -3,7 +3,7 @@ layout: listing
 title: Randomised Solutions
 display_on_nav: false
 collection: solutions_randomized
-permalink: /solutions_randomized
+permalink: /solutions/randomized
 title_redirect_link: "/solutions"
 title_redirect_name: "Back to Solutions"
 ---

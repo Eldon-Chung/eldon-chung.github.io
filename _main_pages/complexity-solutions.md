@@ -3,7 +3,7 @@ layout: listing
 title: Complexity Solutions
 display_on_nav: false
 collection: solutions_complexity
-
+permalink: /solutions/complexity
 title_redirect_link: "/solutions"
 title_redirect_name: "Back to Solutions"
 ---
