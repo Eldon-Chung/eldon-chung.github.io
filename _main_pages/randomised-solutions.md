@@ -25,7 +25,7 @@ title_redirect_name: "Back to Solutions"
             {{ post.title | escape }}
           </a>
         </h3>
-          {{ post.excerpt }}
+          <h2>{{ post.excerpt }}</h2>
       </li>
       {%- endfor -%}
     </ul>
