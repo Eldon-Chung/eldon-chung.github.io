@@ -30,6 +30,7 @@ github_username:  eldon-chung
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-katex
 
 markdown: kramdown
 kramdown:
