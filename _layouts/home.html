@@ -1,75 +1,22 @@
 ---
-layout: default
+layout: archive
 ---
 
-<div class="home">
-  <!--{%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}-->
+{{ content }}
 
-  <div class="row">
-                <div class="column1">
-                	<!-- upper half of the first column -->
-                    <div style="margin: 0 0 5px"><img src="./assets/img/profile.jpg" alt="Logo" style="max-width: 100%">
-                    </div>
-                	<!-- lower half of the first column -->
-                	<p class="name" > Eldon Chung </p>
+<!-- <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
-                	<p class="link" >
-                		<a href="./assets/pdf/cv.pdf">
-                			Curriculum Vitae <br> 
-                		<small class="secondary"> Check out my CV here! </small>
-                		</a>
-                	</p>
-                </div>
-                <div class="column2">
-	                {{ content }}
-                </div>
-   </div> 
+{% if paginator %}
+  {% assign posts = paginator.posts %}
+{% else %}
+  {% assign posts = site.posts %}
+{% endif %}
 
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+<div class="entries-{{ entries_layout }}">
+  {% for post in posts %}
+    {% include archive-single.html type=entries_layout %}
+  {% endfor %}
 </div>
-<style>
-/** Added stuff for columns */
-.column1 {
-  float: left;
-  width: 40%;
-  height: 40%;
-}
-.column2 {
-  float: right;
-  width: 55%;
-}
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-.link {
-	margin: 0 0 20px;
-    text-decoration: none;
-
-}
-
-.link > a {
-	color: #267CB9;
-    text-decoration: none;
-}
-
-.link > a:hover {
-	color:#069;
- 	font-weight:bold
-}
-
-.link > a > small {
-	color: #777;
-}
-
-.name {
-	margin: 0 0 20px;
-	text-align: right;
-	font-weight: bolder;
-}
-
-</style>
+{% include paginator.html %} -->
