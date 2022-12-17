@@ -236,6 +236,11 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-archives
+  - jekyll-inline-svg
+  - jekyll-jupyter-notebook
+
+svg:
+  optimize: true
 
 # mimic GitHub Pages with --safe
 whitelist:
