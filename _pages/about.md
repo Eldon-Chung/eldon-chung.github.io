@@ -5,7 +5,6 @@ layout: single
 classes: wide
 header:
   image: /assets/img/about/header-image.jpg
-#   caption: ""
 ---
 
 Hey!

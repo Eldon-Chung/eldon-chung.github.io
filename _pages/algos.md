@@ -9,7 +9,6 @@ header:
   image: /assets/img/algos/header-image.jpg
   caption: "Well that might be one way to 
   introduce algorithms..."
-  # teaser: /assets/img/algos/title-card.png
 ---
 
 Just a collection of posts about algorithms and data structures.

@@ -8,7 +8,6 @@ classes: wide
 header:
   image: /assets/img/papers/header-image.jpg
   caption: "My office space during a quick research visit to Aarhus University, Denmark"
-#   teaser: /assets/img/papers/title-card.png
 ---
 
 * [Stronger 3SUM-Indexing Lower Bounds.](/paper/3sum)
