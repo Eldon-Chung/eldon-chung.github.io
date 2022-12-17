@@ -1,0 +1,500 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+
+<head>
+  <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Why study algorithms. - Nodle’s Site</title>
+<meta name="description" content="Preface This post is really meant as a very soft introduction to what algorithms are. There’s hardly any technical content and it’s really just a frontmatter to keep my content self-contained. Also, some very basic background in Python is required but really you can get the hang of it just a few posts in, I’m sure.">
+
+
+  <meta name="author" content="Eldon Chung">
+  
+  <meta property="article:author" content="Eldon Chung">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Nodle's Site">
+<meta property="og:title" content="Why study algorithms.">
+<meta property="og:url" content="https://eldon-chung.github.io/algos/intro">
+
+
+  <meta property="og:description" content="Preface This post is really meant as a very soft introduction to what algorithms are. There’s hardly any technical content and it’s really just a frontmatter to keep my content self-contained. Also, some very basic background in Python is required but really you can get the hang of it just a few posts in, I’m sure.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2022-12-16T00:00:00+08:00">
+
+
+
+
+
+
+<link rel="canonical" href="https://eldon-chung.github.io/algos/intro">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Eldon Chung",
+      "url": "https://eldon-chung.github.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+  <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+</head>
+
+<body
+  class="layout--single wide">
+  <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+  
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Nodle's Site
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/posts/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/papers/">Papers</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+  <div class="initial-content">
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Why study algorithms.">
+    <meta itemprop="description" content="PrefaceThis post is really meant as a very soft introduction to what algorithms are.There’s hardly any technical content and it’s really just a frontmatter to keepmy content self-contained. Also, some very basic background in Python is requiredbut really you can get the hang of it just a few posts in, I’m sure.">
+    <meta itemprop="datePublished" content="2022-12-16T00:00:00+08:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="https://eldon-chung.github.io/algos/intro" class="u-url" itemprop="url">Why study algorithms.
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-cog"></i> Preface: My Table of Contents</h4></header>
+              <ul class="toc__menu"><li><a href="#preface">Preface</a><ul><li><a href="#design-philosophy-of-this-series">Design Philosophy of this Series</a></li></ul></li><li><a href="#what-are-algorithms-from-a-laymans-perspective">What are algorithms? From a layman’s perspective</a></li><li><a href="#what-are-algorithms-from-a-computer-scientists-perspective">What are algorithms? From a computer scientist’s perspective</a></li><li><a href="#so-why-study-algorithms">So why study algorithms?</a><ul><li><a href="#your-very-first-algorithm">Your very first algorithm</a></li><li><a href="#some-things-to-think-about">Some Things to Think About</a></li></ul></li><li><a href="#where-do-we-go-from-here">Where do we go from here?</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h1 id="preface">Preface</h1>
+<p>This post is really meant as a very soft introduction to what algorithms are.
+There’s hardly any technical content and it’s really just a frontmatter to keep
+my content self-contained. Also, some very basic background in Python is required
+but really you can get the hang of it just a few posts in, I’m sure.</p>
+
+<blockquote>
+  <p>Do I need a math/programming background?</p>
+</blockquote>
+
+<p>It would help! But I’ll also do my best to keep it as self contained as possible.
+Feel free to skip parts that are already too easy, but definitely make sure you 
+at least understand it before moving on. At the very minimum, basic Python 
+is required.</p>
+
+<blockquote>
+  <p>Is this first post really necessary?</p>
+</blockquote>
+
+<p>Depends on what you want to get out of it. I think most people might benefit from 
+learning some algorithms first before coming back to this post to reflect on what 
+I’ve said here. At the same time, I think this post is actually the most important
+for people who wish to see algorithms in a deeper sense. So my suggestion is for one to read this page to just familiarise themselves with what’s been said here, before circling back after much more of the the content that I’m putting out before thinking back on what’s been said here.</p>
+
+<h2 id="design-philosophy-of-this-series">Design Philosophy of this Series</h2>
+<blockquote>
+  <p>Is there an order in which I should be reading this?</p>
+</blockquote>
+
+<p>Again, it depends! If there is a specific topic or algorithm that you’re looking for and 
+I have a post on it, you can just read that post. If you’re here for a more structured 
+reading, you can probably just read things from start to end, skip around a little bit 
+and even circle back sometimes. At the end of this post I’ll talk about the rough 
+structure behind this series of posts.</p>
+
+<p>That said, there are a few considerations I have when deciding the order in which I’m writing my content:</p>
+<ol>
+  <li>Sometimes, it’s hard for newcomers to algorithms to fully appreciate ideas in certain 
+topics without first gaining some experience.</li>
+  <li>At the same time, trying to give newcomers all the information that they need from the 
+getgo is trying to do too much, too fast, at too early of a stage.</li>
+</ol>
+
+<p style="color:gray; font-size: 80%; text-align: center;"><img src="/assets/diagrams/algos/intro/concept.png" alt="" style="width:100%; height:100%;" />
+Covering the all of the relevant details is too much. But just covering the main idea
+is ultimately insufficient.</p>
+
+<p>Because of that, the rough philosophy I have in mind (right now at least)
+for this “course” is as follows:</p>
+<ul>
+  <li>I’ll do my best to pick and order topics so that the progression in learning makes 
+sense.</li>
+  <li>I’ll mention whether things actually have more nuance without actually going into 
+details at the beginning. Readers may just leave a mental footnote that we will be 
+revisiting the topic again (either in passing or in detail) for a deeper understanding.</li>
+  <li>Often times, I will make simplifying assumptions but I will tell you what they are
+and how things might work differently. In fact, expect my next post 
+to talk about the most important ones that we’ll be making throughout most of 
+this content.</li>
+</ul>
+
+<p>Also in the interest of making this self-contained, there will be a few introductory 
+posts just so that we can all get on the same page about what our algorithms
+are allowed to and not allowed to do. Just give those a quick glance if you’re already
+familiar with the content.</p>
+
+<h1 id="what-are-algorithms-from-a-laymans-perspective">What are algorithms? From a layman’s perspective</h1>
+<p>Algorithms might sound like something only “tech” people do. You might have 
+heard about it in movies or TV shows. Every time someone wants to hide the 
+details of doing something fancy on a computer they just say “I have this algorithm
+that does all of it for me.”</p>
+
+<p>The truth is, the plainest description for what an algorithm is, to be frank, 
+immensely mundane. In layman terms:</p>
+
+<blockquote>
+  <p>(Informal) An <strong>algorithm</strong> is just a finite description of a set of steps 
+to accomplish a given task, given some initial input or state.</p>
+</blockquote>
+
+<p>I hope I’ve not actually scared you away from the study of algorithms itself. 
+My point is, with loose enough terms, there are <em>a lot</em> of things that can be 
+viewed as an algorithm.</p>
+
+<p>Directions on how to get from your home to work, for example. A baking recipe.
+A routine at the gym, even.</p>
+
+<p>All of the above generally provide a list of steps that need to be followed in
+sequence. You might start with some ingredients, and upon finishing the 
+steps, would arrive with some cinnamon rolls.</p>
+
+<p>So in the most abstract sense, “algorithm” really is just a fancy term for “instructions”.</p>
+
+<p>It might be more instructive at this point to ask, <em>what isn’t an algorithm</em>?
+Anything which might not be well defined, or anything that does not really 
+set out to accomplish a goal via a set of steps, would probably not be called 
+an algorithm.</p>
+
+<p>That said, it’s pretty hard to actually draw a clear distinction right now. 
+Luckily, I don’t think it’s all that important at this point (nor at any point)
+to actually do this. The irony is that, over time, as you get comfortable with
+algorithms, you might also come to agree that having a layman description of 
+what an algorithm is, is really nigh on impossible, but at the same time 
+not very important.</p>
+
+<p>This isn’t to say that we should not have formal mathematical definitions for
+what algorithms are. In fact, that is going to be really important for us.
+Eventually when I come to introduce it much later on, we will talk about 
+how mathematics has a strict sense of what an algorithm is, and how it 
+differs from what I have mentioned above.</p>
+
+<h1 id="what-are-algorithms-from-a-computer-scientists-perspective">What are algorithms? From a computer scientist’s perspective</h1>
+<p>Alright, let’s depart from the abstract and talk about what you’re probably here for.<br />
+Almost always, when we talk about algorithms in a formal setting, algorithms are 
+descriptions for how to manipulate data. The data usually comes in the form of bits that might encode integers, floating point numbers, strings, and so on. 
+Here is a really simple example written in Python<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">power</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="c1"># assumes that b &gt;= 0
+</span>    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">b</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">result</span> <span class="o">*=</span> <span class="n">a</span>
+        <span class="n">b</span> <span class="o">-=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">result</span></code></pre></figure>
+
+<p style="color:gray; font-size: 80%; text-align: center;">Alg.1 - An algorithm that raises <code class="language-plaintext highlighter-rouge">a</code> to the power of non-negative <code class="language-plaintext highlighter-rouge">b</code>.</p>
+
+<p>You can think of the Python code for the example above as an <em>implementation</em> of an
+algorithm. Each algorithm is solving a respective <em>task</em>. The algorithm is 
+the set of steps needed to get the task done, and we are executing the steps in Python.
+One could also write the same algorithm in a different programming language 
+and it would be more or less the same algorithm if it has the same steps<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+
+<p>As a whole, the study of algorithms is about trying to come up with a set of steps
+that given some kind of input, manipulates it so that we get some desired output.
+Sorting a bunch of numbers is a task. Storing a bunch of names is a task. Trying to 
+see if a specific number is stored in a list, is a task. In the next chapter we will talk
+about what kind of steps can we make, and what kind of data do we operate on.</p>
+
+<h1 id="so-why-study-algorithms">So why study algorithms?</h1>
+<p>Often times, coming up with an algorithm is not enough, it’s important that 
+we come up with algorithms that <strong>are efficient</strong>. Now what “efficient” means is a little 
+complicated to explain, as you’ll see. But generally, most of the time as we come up
+with ideas, efficiency is a primary concern.</p>
+
+<p>Most of the time, people will have to manipulate data in all sorts of ways. Being more efficient 
+generally translates to using less time, less computer memory, and perhaps even saving electrical energy
+and so forth. While in truth it is actually hard to go about measuring these factors precisely, 
+studying algorithms itself should at least help you build up a good toolset to go reasoning about 
+any algorithm you might end up designing in the future.</p>
+
+<h2 id="your-very-first-algorithm">Your very first algorithm</h2>
+<p>Let’s start with one of my favourite algorithms solving a really common task – <strong>binary search</strong>. Let’s say 
+that you were given a sequence of numbers. For convenience I’ve also draw them as boxes with
+heights for the sake of illustration.</p>
+
+<p><img src="/assets/diagrams/algos/intro-binary-search-setup.png" alt="" style="width:100%; height:100%; background-color: white;" /></p>
+
+<p>And the task is that you’ll be given a number, for example, <code class="language-plaintext highlighter-rouge">15</code>. Now it’s probably quite clear
+at first glance that clearly <code class="language-plaintext highlighter-rouge">15</code> is present in our list. That aside, I want you to focus on 
+<em>how</em> you arrived at that conclusion. Did you look at every number up on that list, and check to see
+whether each number was <code class="language-plaintext highlighter-rouge">15</code>? If I gave you 100 numbers, how many numbers would you look at? 
+How about if I gave you 1000? 10000000?</p>
+
+<p>Consider the following algorithm instead, when we are given a query number like <code class="language-plaintext highlighter-rouge">15</code>, we 
+start in the middle and compare it against the middle element of the list, like so:</p>
+
+<p><img src="/assets/diagrams/algos/intro-binary-search-first-comparison.png" alt="" style="width:100%; height:100%; background-color: white;" /></p>
+
+<p>Notice how the middle element here is smaller than <code class="language-plaintext highlighter-rouge">15</code>? Since our list here is sorted, we know that 
+everything to the “left” of the middle element must also be smaller than <code class="language-plaintext highlighter-rouge">15</code>. So we now know that 
+the only relevant portion of the list is on the right. So we can proceed to search only on the right side 
+of the list. This sort of idea is called <em>recursion</em>. We’ll talk about that in detail very soon. 
+But here’s an example implementation the algorithm in Python:</p>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">left_index</span><span class="p">,</span> <span class="n">right_index</span><span class="p">):</span>
+    <span class="c1"># if the array is empty
+</span>    <span class="k">if</span> <span class="n">left_index</span> <span class="o">&gt;</span> <span class="n">right_index</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">False</span>
+
+    <span class="n">middle_index</span> <span class="o">=</span> <span class="p">(</span><span class="n">left_index</span> <span class="o">+</span> <span class="n">right_index</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+
+    <span class="c1"># if the middle element is the same as num, we return it 
+</span>    <span class="k">if</span> <span class="n">array</span><span class="p">[</span><span class="n">middle_index</span><span class="p">]</span> <span class="o">==</span> <span class="n">num</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">True</span>
+
+    <span class="c1"># if the number we're looking for is larger than the middle element,
+</span>    <span class="c1"># we search on the right half of the array 
+</span>    <span class="k">if</span> <span class="n">array</span><span class="p">[</span><span class="n">middle_index</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">num</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">search</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">middle_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">right_index</span><span class="p">)</span>
+    <span class="c1"># else the number we're looking for is smaller than the middle element,
+</span>    <span class="c1"># we search on the left half of the array
+</span>    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">search</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">num</span><span class="p">,</span> <span class="n">left_index</span><span class="p">,</span> <span class="n">middle_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span></code></pre></figure>
+
+<p style="color:gray; font-size: 80%; text-align: center;">Alg.2 - An algorithm that given an array of numbers, searches for whether <code class="language-plaintext highlighter-rouge">num</code> exists.</p>
+
+<p>Take some time to familiarise yourself with what’s going on here. I’ve only done one “iteration” of the 
+algorithm. After it has decided to search on the right half, what happens next? It might be worth it 
+to try out the algorithm from yourself from start to end. Also try it on other inputs, like <code class="language-plaintext highlighter-rouge">4</code> or <code class="language-plaintext highlighter-rouge">0</code>
+or <code class="language-plaintext highlighter-rouge">100</code> and see what the algorithm does.</p>
+
+<p>Now back to the main point behind this algorithm. How many numbers do you think this algorithm inspects?
+Since we are halving the list at each given time, if we had started with 8 numbers, we really only need 
+to check 3 numbers at most. For a 1000 numbers, we only need to check 10 numbers.</p>
+
+<p>In general, if there are \(n\) numbers, we only need to check about \(log(n)\) numbers, where the base of the 
+logarithm is \(2\). On the other hand, consider a more straightforward algorithm that just checks all \(n\)
+numbers. Here’s how that holds up comparatively against each other:</p>
+
+<p style="text-align: center; width:100%; height:100%;"><img src="/assets/notebooks/algos/logvslinear.png" alt="linear vs binary search" /></p>
+<p style="color:gray; font-size: 80%; text-align: center;">Fig.1 The number of comparisons for binary search (red), and for linear search (blue).</p>
+
+<p>Notice how even with a list of size 64, there is already a marked difference between 
+the “efficiency” of the two algorithms.</p>
+
+<h2 id="some-things-to-think-about">Some Things to Think About</h2>
+<p>Here are some follow-up questions that are quite important to consider:</p>
+
+<ol>
+  <li>Does the “linear” search algorithm really always take as many comparisons as there are elements? 
+Are there good cases where the “linear” search algorithm might win out against binary search?</li>
+  <li>What sort of assumptions are we making about the list? What if the list of numbers could not be indexed into?</li>
+  <li>If it was not a list of numbers, but a list of something else like names instead. Does binary search still work? What are we assuming about numbers that we need for this algorithm to work?</li>
+  <li>Is \(log(n)\) the best that we can do for a list of size \(n\)?</li>
+  <li>Is “number of element comparisons/accesses” really the way to measure efficiency? Are there other things
+we should be considering?</li>
+</ol>
+
+<p>In due time we will go about answering some of these questions in detail. But for now it’s good to just 
+have these in the back of your mind as we progress.</p>
+
+<h1 id="where-do-we-go-from-here">Where do we go from here?</h1>
+<p>So the way I’ve decided to go about covering algorithms is roughly in 4 sections:</p>
+
+<ol>
+  <li>There will be a very small section on what data types we will be operating on
+ as well as what will be the kind of steps we can use to make up our set of 
+ instructions. We will also talk a little bit about how we measure the “efficiency” of an 
+ algorithm.</li>
+  <li>We’ll go through some basic algorithms and data structures to build up a toolbox.
+ In this stage, we’ll take a less than formal approach. The idea is to build up 
+ some familiarity with the ideas and intuition.</li>
+  <li>We’ll revisit some of these ideas, but with a much more formal approach, 
+ so that we can see old ideas in a new light.</li>
+  <li>We’ll start talking about a much wider class of algorithms. Algorithms in the wild,
+ algorithms for different settings. Some used in real life, some that exist 
+ only to prove a point.</li>
+</ol>
+
+<p>Although the first section really has not much to do with algorithms, it definitely 
+is really important for anyone starting out in algorithms. I highly suggest a quick 
+read through because it’s important to understand at a lower level what sort is sort 
+of happening whenever we design algorithms.</p>
+
+<hr />
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Since our focus is on algorithms, there’s less emphasis on what Pythonic features are out there and often times the choices are based on what I want to focus on for the sake of algorithm exposition. I could have used iterators but instead opted for direct indexing for a reason. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>There are some caveats to what I’ve said here but for now it is not a very important distinction right now. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2022-12-16T00:00:00+08:00">December 16, 2022</time></p>
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+  </div>
+
+  
+
+  <div id="footer" class="page__footer">
+    <footer>
+      <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+      <div class="page__footer-copyright">&copy; 2022 Eldon Chung. Powered by <a href="https://jekyllrb.com"
+    rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/"
+    rel="nofollow">Minimal Mistakes</a>.</div>
+    </footer>
+  </div>
+
+  
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
