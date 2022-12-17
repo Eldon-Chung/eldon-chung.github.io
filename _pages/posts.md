@@ -9,11 +9,14 @@ feature_row:
     excerpt: "A semi-structured series on algorithms."
     title: "Series on Algorithms"
     btn_label: "Visit Series"
-    btn_class: "btn--inverse"
+    btn_class: "btn--info"
 ---
 
------------------------------------------------
-## Series of Posts
+<hr class="main-bar">
+# Series of Posts
+<hr class="sub-bar">
 {% include feature_row %}
 
-## Other Miscellaneous Posts 
+
+# Other Miscellaneous Posts 
+<hr class="sub-bar">
