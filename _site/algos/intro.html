@@ -330,7 +330,43 @@ any algorithm you might end up designing in the future.</p>
 that you were given a sequence of numbers. For convenience I’ve also draw them as boxes with
 heights for the sake of illustration.</p>
 
-<p><img src="/assets/diagrams/algos/intro-binary-search-setup.png" alt="" style="width:100%; height:100%; background-color: white;" /></p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg2" width="24" height="24" viewBox="-1 -1 1000 1000" foo="bar" style="background-color: white; width:100%; height:100%;">
+  <sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" showgrid="true" width="1000px">
+    <inkscape:grid type="xygrid" id="grid5" empcolor="#0099e5" empopacity="0.1372549" />
+  </sodipodi:namedview>
+  <rect style="fill:none;stroke:#000000;stroke-width:0.452263;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109" width="79.760429" height="209.52087" x="39.239571" y="709.47913" ry="0.69119209" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.590726;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-6" width="79.381721" height="359.15594" x="159.61827" y="559.84406" ry="1.1848258" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.668546;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-9" width="79.544144" height="459.07846" x="279.45584" y="459.92154" ry="1.514462" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.696995;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-6-6" width="79.381721" height="500" x="399.61829" y="419" ry="1.6494588" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.776141;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-6-6-1" width="79.381721" height="620" x="519.61829" y="299" ry="2.0453289" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.858668;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-6-6-1-6" width="79.311127" height="759.53534" x="639.65356" y="159.42934" ry="2.5056446" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.88713;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-6-6-1-6-9" width="79.381721" height="810" x="759.61829" y="109" ry="2.6721232" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.923601;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect109-6-6-1-6-9-2" width="79.246193" height="879.47046" x="879.68604" y="39.4618" ry="2.9013004" />
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="66.619781" y="884" id="text11324">
+    <tspan id="tspan11322" x="66.619781" y="884">4</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="186.34038" y="883.39453" id="text11324-5">
+    <tspan id="tspan11322-6" x="186.34038" y="883.39453">6</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="306.26892" y="884" id="text11405">
+    <tspan id="tspan11403" x="306.26892" y="884">7</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="426.5943" y="883.33594" id="text11409">
+    <tspan id="tspan11407" x="426.5943" y="883.33594">8</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="533.29352" y="884" id="text11413">
+    <tspan id="tspan11411" x="533.29352" y="884">11</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="652.13141" y="884" id="text11417">
+    <tspan id="tspan11415" x="652.13141" y="884">14</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="772.58063" y="883.39453" id="text11421">
+    <tspan id="tspan11419" x="772.58063" y="883.39453">15</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="892.42438" y="884" id="text11425">
+    <tspan id="tspan11423" x="892.42438" y="884">17</tspan>
+  </text>
+</svg>
 
 <p>And the task is that you’ll be given a number, for example, <code class="language-plaintext highlighter-rouge">15</code>. Now it’s probably quite clear
 at first glance that clearly <code class="language-plaintext highlighter-rouge">15</code> is present in our list. That aside, I want you to focus on 
@@ -341,7 +377,44 @@ How about if I gave you 1000? 10000000?</p>
 <p>Consider the following algorithm instead, when we are given a query number like <code class="language-plaintext highlighter-rouge">15</code>, we 
 start in the middle and compare it against the middle element of the list, like so:</p>
 
-<p><img src="/assets/diagrams/algos/intro-binary-search-first-comparison.png" alt="" style="width:100%; height:100%; background-color: white;" /></p>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg2" width="24" height="24" viewBox="-1 -1 1000 1000" foo="bar" style="background-color: white; width:100%; height:100%;">
+  <sodipodi:namedview id="namedview4" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" showgrid="true" width="1000px">
+    <inkscape:grid type="xygrid" id="grid5" empcolor="#0099e5" empopacity="0.1372549" />
+  </sodipodi:namedview>
+  <rect style="fill:none;stroke:#000000;stroke-width:0.452263;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:0.39380531" id="rect109" width="79.760429" height="209.52087" x="39.239571" y="709.47913" ry="0.69119209" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.590726;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:0.39380531" id="rect109-6" width="79.381721" height="359.15594" x="159.61827" y="559.84406" ry="1.1848258" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.668546;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:0.39380531" id="rect109-9" width="79.544144" height="459.07846" x="279.45584" y="459.92154" ry="1.514462" />
+  <rect style="fill:#00ffff;stroke:#000000;stroke-width:0.696995;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;fill-opacity:1" id="rect109-6-6" width="79.381721" height="500" x="399.61829" y="419" ry="1.6494588" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.776141;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:1" id="rect109-6-6-1" width="79.381721" height="620" x="519.61829" y="299" ry="2.0453289" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.858668;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:1" id="rect109-6-6-1-6" width="79.311127" height="759.53534" x="639.65356" y="159.42934" ry="2.5056446" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.88713;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:1" id="rect109-6-6-1-6-9" width="79.381721" height="810" x="759.61829" y="109" ry="2.6721232" />
+  <rect style="fill:none;stroke:#000000;stroke-width:0.923601;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;opacity:1" id="rect109-6-6-1-6-9-2" width="79.246193" height="879.47046" x="879.68604" y="39.4618" ry="2.9013004" />
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:0.39380531" x="66.619781" y="884" id="text11324">
+    <tspan id="tspan11322" x="66.619781" y="884">4</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:0.39380531" x="186.34038" y="883.39453" id="text11324-5">
+    <tspan id="tspan11322-6" x="186.34038" y="883.39453">6</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:0.39380531" x="306.26892" y="884" id="text11405">
+    <tspan id="tspan11403" x="306.26892" y="884">7</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none" x="426.5943" y="883.33594" id="text11409">
+    <tspan id="tspan11407" x="426.5943" y="883.33594">8</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:1" x="533.29352" y="884" id="text11413">
+    <tspan id="tspan11411" x="533.29352" y="884">11</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:1" x="652.13141" y="884" id="text11417">
+    <tspan id="tspan11415" x="652.13141" y="884">14</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:1" x="772.58063" y="883.39453" id="text11421">
+    <tspan id="tspan11419" x="772.58063" y="883.39453">15</tspan>
+  </text>
+  <text xml:space="preserve" style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;opacity:1" x="892.42438" y="884" id="text11425">
+    <tspan id="tspan11423" x="892.42438" y="884">17</tspan>
+  </text>
+  <path style="fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:24,3;stroke-dashoffset:0" d="M -1,109 H 999" id="path13071" />
+</svg>
 
 <p>Notice how the middle element here is smaller than <code class="language-plaintext highlighter-rouge">15</code>? Since our list here is sorted, we know that 
 everything to the “left” of the middle element must also be smaller than <code class="language-plaintext highlighter-rouge">15</code>. So we now know that 
@@ -428,6 +501,47 @@ have these in the back of your mind as we progress.</p>
 is really important for anyone starting out in algorithms. I highly suggest a quick 
 read through because it’s important to understand at a lower level what sort is sort 
 of happening whenever we design algorithms.</p>
+
+<p>All in all, the first three sections are starting to look like this:</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1051.8010748228987 534.3063063336225" width="100%" height="auto">
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://excalidraw.com/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://excalidraw.com/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1051.8010748228987" height="534.3063063336225" fill="#edf2ff" />
+  <g stroke-linecap="round" transform="translate(10 10) rotate(0 182.5 182.5)">
+    <path d="M108.87 15.7 C122.61 6.39, 140.93 3.74, 157.95 1.43 C174.97 -0.88, 193.84 -0.65, 211 1.85 C228.16 4.35, 245.7 9.12, 260.93 16.42 C276.16 23.72, 289.59 34.19, 302.39 45.64 C315.19 57.09, 328.48 70.63, 337.72 85.12 C346.95 99.61, 353.1 116.09, 357.8 132.61 C362.5 149.12, 366.14 167.04, 365.91 184.2 C365.68 201.36, 361.66 219.23, 356.4 235.55 C351.15 251.86, 343.75 267.63, 334.39 282.09 C325.03 296.54, 313.13 310.99, 300.26 322.3 C287.38 333.61, 272.63 343.12, 257.13 349.93 C241.62 356.73, 224.22 361.02, 207.23 363.12 C190.23 365.21, 172.34 364.99, 155.18 362.52 C138.02 360.05, 119.86 355.38, 104.29 348.3 C88.72 341.22, 74.65 331.49, 61.78 320.02 C48.91 308.54, 36.19 294.07, 27.07 279.45 C17.95 264.83, 11.49 248.73, 7.08 232.3 C2.66 215.86, 0.48 197.97, 0.59 180.85 C0.7 163.73, 2.74 146.1, 7.73 129.57 C12.71 113.04, 21.05 96.15, 30.49 81.65 C39.94 67.16, 50.65 54.01, 64.4 42.61 C78.15 31.2, 104.09 17.71, 112.99 13.23 C121.88 8.75, 116.75 12.74, 117.75 15.75" stroke="#a61e4d" stroke-width="4.5" fill="none" stroke-dasharray="8 12" />
+  </g>
+  <g transform="translate(75.01180860580624 68.04248361924988) rotate(0 119.49999999999999 33.37988826815641)">
+    <text x="119.49999999999999" y="23.3798882681564" font-family="Virgil, Segoe UI Emoji" font-size="25.962135319677227px" fill="#a61e4d" text-anchor="middle" style="white-space: pre;" direction="ltr">Analysis and Basic</text>
+    <text x="119.49999999999999" y="56.7597765363128" font-family="Virgil, Segoe UI Emoji" font-size="25.962135319677227px" fill="#a61e4d" text-anchor="middle" style="white-space: pre;" direction="ltr">Building Blocks</text>
+  </g>
+  <g stroke-linecap="round" transform="translate(166 239) rotate(0 245.5 131)">
+    <path d="M32 0 M32 0 C191.79 -0.78, 351.26 -0.35, 459 0 M32 0 C163.99 1.37, 295.8 1.23, 459 0 M459 0 C478.61 0.64, 490.3 10.41, 491 32 M459 0 C478.17 -2.14, 490.48 9.08, 491 32 M491 32 C490.17 74.01, 489.96 118.75, 491 230 M491 32 C491.62 106.07, 491.21 180.39, 491 230 M491 230 C492.15 252.76, 479.85 262.35, 459 262 M491 230 C490.95 250.51, 481.52 263.77, 459 262 M459 262 C346.83 260.6, 235.24 260.22, 32 262 M459 262 C338.36 260.22, 216.51 260.16, 32 262 M32 262 C9.18 263.45, -0.69 249.8, 0 230 M32 262 C11.02 262.53, -1.02 250.15, 0 230 M0 230 C3.18 160.13, 2.03 85.64, 0 32 M0 230 C0.81 155.99, 2.49 80.85, 0 32 M0 32 C-0.17 11.12, 9.2 1.52, 32 0 M0 32 C2.07 9.92, 12.56 -0.69, 32 0" stroke="#0b7285" stroke-width="2" fill="none" />
+  </g>
+  <g transform="translate(253 393.5) rotate(0 194 46)">
+    <text x="194" y="33" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#0b7285" text-anchor="middle" style="white-space: pre;" direction="ltr">Basic Algorithms</text>
+    <text x="194" y="79" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#0b7285" text-anchor="middle" style="white-space: pre;" direction="ltr">and Data Structures</text>
+  </g>
+  <g stroke-linecap="round" transform="translate(148.83897579980817 142.50241819991783) rotate(0 446.4810495115453 190.90194406685234)">
+    <path d="M32 0 M32 0 C320.61 0.82, 607.86 0.71, 860.96 0 M32 0 C226.54 -1.31, 420.68 -1.5, 860.96 0 M860.96 0 C880.72 1, 892.14 12.55, 892.96 32 M860.96 0 C884.39 -0.57, 893.63 8.63, 892.96 32 M892.96 32 C894.18 155.34, 894.49 277.26, 892.96 349.8 M892.96 32 C893.36 150.05, 893.14 268, 892.96 349.8 M892.96 349.8 C892.95 370.12, 882.32 381.39, 860.96 381.8 M892.96 349.8 C893.01 372.09, 880.02 383.65, 860.96 381.8 M860.96 381.8 C616.77 384.04, 370.84 383.99, 32 381.8 M860.96 381.8 C567.83 379.57, 274.5 379.45, 32 381.8 M32 381.8 C9.76 382.21, 1.46 371.2, 0 349.8 M32 381.8 C12.64 380.12, -1.23 372.18, 0 349.8 M0 349.8 C2.09 285.65, 0.85 220.41, 0 32 M0 349.8 C0.07 285.76, 0.08 220.78, 0 32 M0 32 C0.54 9.4, 11.29 -1.54, 32 0 M0 32 C0.9 10.64, 11.22 0.33, 32 0" stroke="#087f5b" stroke-width="4" fill="none" />
+  </g>
+  <g transform="translate(632.9741900226796 165.18643906662402) rotate(0 183.5 69)">
+    <text x="367" y="33" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#087f5b" text-anchor="end" style="white-space: pre;" direction="ltr">More formal analysis</text>
+    <text x="367" y="79" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#087f5b" text-anchor="end" style="white-space: pre;" direction="ltr">of algorithms and</text>
+    <text x="367" y="125" font-family="Virgil, Segoe UI Emoji" font-size="36px" fill="#087f5b" text-anchor="end" style="white-space: pre;" direction="ltr">data structures</text>
+  </g>
+</svg>
+<p style="color:gray; font-size: 80%; text-align: center;">Just a sketch of how the sections relate to each other.</p>
 
 <hr />
 
