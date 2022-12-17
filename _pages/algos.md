@@ -3,6 +3,7 @@ title: Algorithms and Data Structures
 layout: collection
 permalink: /algos/
 collection: algos
+entries_layout: grid
 classes: wide
 ---
 
