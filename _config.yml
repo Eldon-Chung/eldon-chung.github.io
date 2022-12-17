@@ -242,9 +242,6 @@ plugins:
 svg:
   optimize: true
 
-whitelist:
-  - jekyll-inline-svg
-
 # mimic GitHub Pages with --safe
 whitelist:
   - jekyll-paginate
@@ -252,6 +249,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-inline-svg
 
 
 # Archives
