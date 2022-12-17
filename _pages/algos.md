@@ -5,6 +5,9 @@ permalink: /algos/
 collection: algos
 entries_layout: grid
 classes: wide
+header:
+  image: /assets/img/algos/title-card.png
+  teaser: /assets/img/algos/title-card.png
 ---
 
 Just a collection of posts about algorithms and data structures.
