@@ -7,13 +7,13 @@ feature_row:
   - url: /algos/
     image_path: /assets/img/algos/title-card.png
     excerpt: "A semi-structured series on algorithms."
-    title: "Series on Algorithms"
+    title: "Algos"
     btn_label: "Visit Series"
     btn_class: "btn--info"
   - url: /papers/
     image_path: /assets/img/papers/title-card.png
     excerpt: "An informal look into my research."
-    title: "Series on Papers"
+    title: "Research Posts"
     btn_label: "Visit Series"
     btn_class: "btn--info"
 ---
