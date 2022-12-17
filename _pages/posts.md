@@ -10,6 +10,12 @@ feature_row:
     title: "Series on Algorithms"
     btn_label: "Visit Series"
     btn_class: "btn--info"
+  - url: /papers/
+    image_path: /assets/img/papers/title-card.png
+    excerpt: "An informal look into my research."
+    title: "Series on Papers"
+    btn_label: "Visit Series"
+    btn_class: "btn--info"
 ---
 
 <hr class="main-bar">
