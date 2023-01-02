@@ -1,15 +1,15 @@
 ---
 permalink: /algos/first-look
-title: "A First Look Into Algorithms"
+title: "A First Look"
 layout: single
 classes: wide
 toc: true
 toc_label: "The Starting Point"
 toc_icon: "cog"
-excerpt: "."
+excerpt: "The very first tool --- Recursion."
 header:
-  image: /assets/img/algos/basics/roadmap.png
-  teaser: /assets/img/algos/basics/header-image.png
+  image: /assets/img/algos/recursion/header-image.png
+  teaser: /assets/img/algos/recursion/header-image.png
 ---
 
 # Prologue
