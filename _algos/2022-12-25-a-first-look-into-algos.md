@@ -1143,7 +1143,7 @@ move further back in the history, otherwise further forward.
 Why? It already takes linear time anyway, so what's the point? The cool thing is that visiting a
 specific commit (or version) doesn't actually take that long. The significantly bigger
 cost is in building the code, and then running the tests (especially for larger projects).
-Because of that, what we want to minimise, is the time spent on building and testing, which is the 
+Because of that, what we want to minimise, is the time spent on building and testing, which is 
 essentialy a "comparison" in this binary search. When seen in this light, it becomes a little more 
 apparent why binary search is favoured here --- the algorithm inherently minimises comparisons!
 
@@ -1186,6 +1186,10 @@ def tower_of_hanoi(num_disks, source_location, target_location):
   tower_of_hanoi(num_disks - 1, mid_location, target_location)
   return 
 {% endhighlight %}
+----------------------------------
+
+# Thanks
+Thanks to Christian for helping to give this post a looksee. 
 
 ----------------------------------
 [^base]: We will see in the future this can be a little arbitrary, but for now it's not a major concern. We will just very reasonable base cases.
