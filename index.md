@@ -13,7 +13,7 @@ intro:
 
 Hello there!
 
-I am Eldon Chung. Lecturer at the [School of Computing, in the National University of Singapore](https://www.comp.nus.edu.sg/). Before this I was a PhD student supervised by [Prof. Divesh Aggarwal's group](https://sites.google.com/site/diveshhomepage/). Before this I did an undergraduate in computer science here in NUS as well. 
+I am a lecturer at the [School of Computing, in the National University of Singapore](https://www.comp.nus.edu.sg/). Before this I was a PhD student supervised by [Prof. Divesh Aggarwal](https://sites.google.com/site/diveshhomepage/). Before this I did an undergraduate in computer science here in NUS as well. 
 
 My research interests are mainly in structural computational complexity and I am currently working on varied topics in information theoretic cryptography. You may find 
 my list of papers [here](/papers/). Most of my research interests in CS predominantly involved discrete mathematics.
